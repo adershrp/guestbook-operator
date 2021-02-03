@@ -1,0 +1,17 @@
+domain: adershrp.org
+layout: go.kubebuilder.io/v3
+projectName: guestbook-operator
+repo: github.com/adershrp/guestbook-operator
+resources:
+- crdVersion: v1
+  group: webapp
+  kind: GuestBook
+  version: v1
+- crdVersion: v1
+  group: webapp
+  kind: Redis
+  version: v1
+version: 3-alpha
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
